@@ -145,7 +145,7 @@ export function AppShowcaseCarousel({ images }: AppShowcaseCarouselProps) {
         >
           {/* Close Button */}
           <button 
-            className="absolute top-4 right-4 text-white/70 hover:text-white p-2 transition-colors cursor-pointer z-[110]"
+            className="absolute top-4 right-4 text-white/70 hover:text-white p-2 transition-colors cursor-pointer z-[110] bg-black/60 hover:bg-black/80 backdrop-blur-md rounded-full"
             onClick={() => setLightboxIndex(null)}
             aria-label="Close"
           >
@@ -161,7 +161,7 @@ export function AppShowcaseCarousel({ images }: AppShowcaseCarouselProps) {
               {images.map((src, index) => (
                 <div 
                   key={index} 
-                  className="flex-[0_0_100%] min-w-0 relative flex items-center justify-center p-4 pb-24 md:p-8 md:pb-32"
+                  className={`flex-[0_0_100%] min-w-0 relative flex items-center justify-center p-4 pt-20 pb-28 md:p-10 md:pt-24 md:pb-32 ${index === lightboxIndex ? 'z-50' : 'z-0'}`}
                 >
                   <TransformWrapper
                     initialScale={1}
@@ -179,7 +179,7 @@ export function AppShowcaseCarousel({ images }: AppShowcaseCarouselProps) {
                     }}
                   >
                     <TransformComponent
-                      wrapperStyle={{ width: '100%', height: '100%' }}
+                      wrapperStyle={{ width: '100%', height: '100%', overflow: 'visible' }}
                       contentStyle={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     >
                       <img 
@@ -196,7 +196,7 @@ export function AppShowcaseCarousel({ images }: AppShowcaseCarouselProps) {
           </div>
 
           {/* Bottom Controls */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-6 z-[110] text-white/70">
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-6 z-[110] text-white/70 bg-black/60 backdrop-blur-md rounded-full px-8 py-3">
             {!isZoomed && (
               <button
                 className="hover:text-white transition-colors cursor-pointer hidden md:block p-2"

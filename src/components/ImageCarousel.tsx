@@ -163,7 +163,7 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
               {images.map((src, index) => (
                 <div 
                   key={index} 
-                  className="flex-[0_0_100%] min-w-0 relative flex items-center justify-center p-4 pt-20 pb-28 md:p-10 md:pt-24 md:pb-32"
+                  className={`flex-[0_0_100%] min-w-0 relative flex items-center justify-center p-4 pt-20 pb-28 md:p-10 md:pt-24 md:pb-32 ${index === lightboxIndex ? 'z-50' : 'z-0'}`}
                 >
                   <TransformWrapper
                     initialScale={1}
