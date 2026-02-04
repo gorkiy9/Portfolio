@@ -1,9 +1,20 @@
 import image_b8983e31879c57a15ef143d3210ce6b16f4bcf42 from 'figma:asset/b8983e31879c57a15ef143d3210ce6b16f4bcf42.png';
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function HomePage() {
+  useLayoutEffect(() => {
+    const savedPosition = sessionStorage.getItem('homePageScrollPosition');
+    if (savedPosition) {
+      window.scrollTo(0, parseInt(savedPosition, 10));
+    }
+
+    return () => {
+      sessionStorage.setItem('homePageScrollPosition', window.scrollY.toString());
+    };
+  }, []);
+
   return (
     <div className="bg-white content-stretch flex flex-col items-start relative size-full min-h-screen" data-name="Home Page">
       {/* Hero Section */}

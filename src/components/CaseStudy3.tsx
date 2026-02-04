@@ -119,8 +119,8 @@ export function CaseStudy3() {
           <h1 className="text-5xl md:text-[80px] font-semibold tracking-[-0.04em] leading-none">
             AEZAKMI Group
           </h1>
-          <p className="text-3xl md:text-[64px] text-black/50 tracking-[-0.04em] leading-none">
-            iOS разработка
+          <p className="text-3xl md:text-[64px] text-black/50 tracking-[-0.04em] leading-none max-w-[800px]">
+            7 из 400+ iOS приложений над которыми я работал
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export function CaseStudy3() {
             <h2 className="text-2xl md:text-[32px] font-semibold tracking-tight leading-none">
               Задачи
             </h2>
-            <ul className="list-disc pl-8 space-y-1 text-base md:text-[20px] leading-[1.24]">
+            <ul className="list-disc pl-8 space-y-1 text-base md:text-[20px] leading-relaxed">
               <li>проектировать iOS-приложения, опираясь на экспертизу и потребности бизнеса</li>
               <li>создавать интерфейсы, соответствующие Human Interface Guidelines</li>
               <li>повышать привлекательность приложений в App Store за счёт визуальной коммуникации</li>
@@ -146,7 +146,7 @@ export function CaseStudy3() {
             <h2 className="text-2xl md:text-[32px] font-semibold tracking-tight leading-none">
               Процесс
             </h2>
-            <p className="text-base md:text-[20px] leading-[1.24]">
+            <p className="text-base md:text-[20px] leading-relaxed">
               Ежедневно проектирую приложения отталкиваясь от базовой идеи переданной проджектом и требований бизнеса к тому или иному приложению. Подготавливаю флоу, часто карандашом на бумаге. Собираю макеты, опираясь на нативные iOS-компоненты и распространенные паттерны поведения пользователей. На этапе реализации передаю макеты в разработку, обсуждаю технические ограничения и компромиссы, контролирую соответствие финального результата дизайн-решениям.
             </p>
           </div>
@@ -157,7 +157,7 @@ export function CaseStudy3() {
               <h2 className="text-2xl md:text-[32px] font-semibold tracking-tight leading-none">
                 Приложения
               </h2>
-              <p className="text-base md:text-[20px] leading-[1.24]">
+              <p className="text-base md:text-[20px] leading-relaxed">
                 Далее несколько приложений из более 400 созданных мной за время работы в студии (2024-2026).
               </p>
             </div>
@@ -170,7 +170,7 @@ export function CaseStudy3() {
                     <AppShowcaseCarousel images={app.images} />
                   </div>
                   <div className="flex flex-col gap-2 text-left w-full max-w-[800px]">
-                    <h3 className="text-xl md:text-[24px] font-semibold tracking-tight">
+                    <h3 className="text-xl md:text-[24px] font-semibold tracking-[0.015em]">
                       {app.title}
                     </h3>
                     <p className="text-base md:text-[18px] text-black/60 leading-relaxed">

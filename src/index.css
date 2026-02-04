@@ -364,6 +364,8 @@
     color: var(--foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    letter-spacing: .015em;
+    line-height: 1.24;
   }
 
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) h1 {
@@ -1057,11 +1059,6 @@
     line-height: 1.2;
   }
 
-  .leading-\[1\.24\] {
-    --tw-leading: 1.24;
-    line-height: 1.24;
-  }
-
   .leading-\[1\.32\] {
     --tw-leading: 1.32;
     line-height: 1.32;
@@ -1115,6 +1112,11 @@
   .tracking-\[-1\.92px\] {
     --tw-tracking: -1.92px;
     letter-spacing: -1.92px;
+  }
+
+  .tracking-\[0\.015em\] {
+    --tw-tracking: .015em;
+    letter-spacing: .015em;
   }
 
   .tracking-normal {

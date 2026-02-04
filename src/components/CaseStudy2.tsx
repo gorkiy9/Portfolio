@@ -3,7 +3,7 @@ import { ImageCarousel } from './ImageCarousel';
 
 export function CaseStudy2() {
   const carouselImages = [
-    "https://psv4.userapi.com/s/v1/d2/JCcilpaNwNJN6JUE4aemdfHwfdJwMaQZ-kgBEXBOgYNWkO-E0AtqNZb6p0YOHPz7FN7rQ-PpLoBtRpFaKmTcTp97E7c_doIbojOUrwwEk_7XryDr_mWAMU4KCuWvqzjBXEah2jk_zdV8/1.png",
+    "https://psv4.userapi.com/s/v1/d2/VcBmA3HioElEKhymid1XQziFN-Vrb7ZfSv3n2MSWSbLZhnlGI-1aDGhYsY1Cxvr_RO2kOA7lLo1vArOnm7yWroMScfoScwvjPT-RaEQ3O6IRGPnNGxGmyoUc0mjQs3RfQbJAVb39kkNU/1.png",
     "https://psv4.userapi.com/s/v1/d2/6q4AbTN81wZDmMG_ljCUZSYyd-ztmwDIRZ5DviDOI0wCuyxxH5M3AtnPJ6ksy5BEsfXm-R1L3xns3hXVt6qiZqiKcMAKF6K6LnYPug7wW6KicdYcBwAkTFkcg1k3jxHq4nq19RfKn0ET/2.png",
     "https://psv4.userapi.com/s/v1/d2/uA9LY-P09rLPYoP7Ds41738HI9CTY__nrtlC4slKJqPk2f0DxLJDttSaTXfH2l4xcgNjGDwNWhCJ4wvj3-LGo-pCTPdg_cF7FrYgXoyg2FyHMhUZszOYm2h9OsPLKlMbWtE0QH0JUFvg/3.png",
     "https://psv4.userapi.com/s/v1/d2/SVWzrmPL73Ajy3ZkIfExD1MFFXShkdRk2eO7nvwVAXljUczHvtR2s6d16JSEMSmeku_xCWbrQkkqguycfZEQEKXrjAcejfX9FHychrg5F3-vxfVHuW5uRDbmsVavNTX6JaRQEIJbCN-p/4.png",
@@ -40,7 +40,7 @@ export function CaseStudy2() {
             <h2 className="text-2xl md:text-[32px] font-semibold tracking-tight leading-none">
               Контекст
             </h2>
-            <div className="text-base md:text-[20px] leading-[1.24] space-y-4">
+            <div className="text-base md:text-[20px] leading-relaxed space-y-4">
               <p>
                 У ASOCKS был устаревший интерфейс и разрозненный пользовательский опыт, что негативно влияло на удержание пользователей в первый месяц использования.
               </p>
@@ -55,7 +55,7 @@ export function CaseStudy2() {
             <h2 className="text-2xl md:text-[32px] font-semibold tracking-tight leading-none">
               Задача
             </h2>
-            <div className="text-base md:text-[20px] leading-[1.24] space-y-4">
+            <div className="text-base md:text-[20px] leading-relaxed space-y-4">
               <div>
                 <p className="mb-0">Моей задачей было:</p>
                 <ul className="list-disc pl-8 space-y-1 mt-2">
@@ -79,7 +79,7 @@ export function CaseStudy2() {
               </h2>
             </div>
 
-            <div className="flex flex-col gap-8 text-base md:text-[20px] leading-[1.24]">
+            <div className="flex flex-col gap-8 text-base md:text-[20px] leading-relaxed">
               {/* Step 1 */}
               <div className="flex flex-col gap-4">
                 <h3 className="font-semibold">
@@ -138,7 +138,7 @@ export function CaseStudy2() {
             <h2 className="text-2xl md:text-[32px] font-semibold tracking-tight leading-none">
               Результат
             </h2>
-            <div className="text-base md:text-[20px] leading-[1.24] space-y-4">
+            <div className="text-base md:text-[20px] leading-relaxed space-y-4">
               <p>
                 После внедрения редизайна коэффициент удержания пользователей в первый месяц вырос с ~21% до ~38%.
               </p>

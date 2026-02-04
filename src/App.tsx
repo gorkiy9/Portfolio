@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { HomePage } from './components/HomePage';
 import { CaseStudy1 } from './components/CaseStudy1';
@@ -10,7 +10,9 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (pathname !== '/') {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;
